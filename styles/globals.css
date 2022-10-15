@@ -34,7 +34,7 @@ nav .forT {
   justify-content: center;
   border-right: 1px solid #000;
   font-size: 27px;
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 nav .call {
   width: 50%;
