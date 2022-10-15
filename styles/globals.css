@@ -83,7 +83,7 @@ nav .talk span, .cta span {
   align-items: center;
 }
 .cta span svg {margin-left: 5px;}
-nav .talk:hover {background: #000;}
+nav .talk:hover {background: lime;}
 a:hover {color: #004F40;}
 .b-bottom {border-bottom: 1.5px solid #004f40;}
 .b-right {border-right: 1.5px solid #004f40;}
