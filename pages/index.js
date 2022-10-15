@@ -14,7 +14,7 @@ export default function Home() {
         <nav>
           <div className="forT"><span className="a-center">{'<> nosazena llc. </>'}</span></div>
           <div className="call"><p>Zen: The&nbsp;Agency</p></div>
-          <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="talk hideSmall" ><span className="a-center">let’s talk about you <svg width="15" height="15" className="a-center" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="talk hideSmall" ><span className="a-center">let&#39;s talk about you <svg width="15" height="15" className="a-center" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 8.69596L1.29935 7.5097L7.08124 12.7885L7.08124 0L8.91882 0V12.7885L14.7006 7.5097L16 8.69596L7.99997 16L0 8.69596Z" fill="white"/>
             </svg>
             </span>
@@ -24,13 +24,13 @@ export default function Home() {
         <section className="hero b-bottom">
           <div className="hero-copy">
             <div className="hero-copy-in">
-              <h3>Businesses: spend your time thinking about your customers, I'll take care of your website</h3>
-              <p className="copy-p">You may not know where to start, what can or can not be done, ot what's needed. <strong>I'm here to help.</strong> 
+              <h3>Businesses: spend your time thinking about your customers, I&#39;ll take care of your website</h3>
+              <p className="copy-p">You may not know where to start, what can or can not be done, ot what&#39;s needed. <strong>I&#39;m here to help.</strong> 
                 <br/>A front end web developers that specialize in user interaction. 
-                <br/>I build landing pages, e-commerce sites, Ads, and more. We'll also update and maintain your existing site if needed.
+                <br/>I build landing pages, e-commerce sites, Ads, and more. We&#39;ll also update and maintain your existing site if needed.
                 <br/>Using HTML, CSS, Javascript, React, and Next.</p>
               <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="cta o">
-                <span>Let’s talk about you 
+                <span>Let&#39;s talk about you 
                   <svg width="15" height="15" className="a-center" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 8.69596L1.29935 7.5097L7.08124 12.7885L7.08124 0L8.91882 0V12.7885L14.7006 7.5097L16 8.69596L7.99997 16L0 8.69596Z" fill="white"/>
                   </svg>
