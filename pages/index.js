@@ -86,7 +86,7 @@ export default function Home() {
 
       <footer>
         <p>Psalm 91</p>
-        <p className="copyRight">Copyright 2022 Nosazena LLC</p>
+        <p className="copyRight">Copyright 2023 Nosazena LLC</p>
         <p>Psalm 91</p>
       </footer>
     </div>
