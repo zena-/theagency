@@ -67,7 +67,10 @@ nav .talk {
   display: flex;
   justify-content: center;
 }
-nav .talk svg {margin-top: -5px;}
+nav .talk svg {
+  margin-top: 0;
+  margin-left: 10px;
+}
 nav .talk span, .cta span {
   text-decoration: none;
   /*font-family: 'Rubik';*/
