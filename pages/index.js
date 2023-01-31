@@ -27,9 +27,9 @@ export default function Home() {
           <div className="hero-copy">
             <div className="hero-copy-in">
               <h3>Businesses: spend your time thinking about your customers, we&#39;ll take care of your&nbsp;website</h3>
-              <p className="copy-p">You may not know where to start, what can or can not be done, ot what&#39;s needed. <strong>I&#39;m here to help.</strong> 
+              <p className="copy-p">You may not know where to start, what can or can not be done, or what&#39;s needed. <strong>We&#39;re here to&nbsp;help.</strong> 
                 <br/>A front end web developers that specialize in user interaction. 
-                <br/>I build landing pages, e-commerce sites, Ads, and more. We&#39;ll also update and maintain your existing site if needed.
+                <br/>We build landing pages, e-commerce sites, ads, and more. We&#39;ll also update and maintain your existing site if needed.
                 <br/>Using HTML, CSS, Javascript, React, and Next.</p>
               <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="cta o">
                 <span>Let&#39;s talk about you 
