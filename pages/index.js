@@ -13,7 +13,7 @@ export default function Home() {
       <main className="">
         <nav>
           <div className="forT"><span className="a-center"></span></div>
-          <div className="call"><p>Zen: The&nbsp;Agency</p></div>
+          <div className="call"><p>Zena</p></div>
           <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="talk hideSmall" ><span className="a-center">let&#39;s talk about you <svg width="15" height="15" className="a-center" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 8.69596L1.29935 7.5097L7.08124 12.7885L7.08124 0L8.91882 0V12.7885L14.7006 7.5097L16 8.69596L7.99997 16L0 8.69596Z" fill="white"/>
             </svg>
