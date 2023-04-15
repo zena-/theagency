@@ -16,8 +16,8 @@ export default function Ad() {
     if (/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/.test(email) && /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phone)) {
       const data = {
         'form-name': 'clientForm',
-        'name': name,
         'company': company,
+        'name': name,
         'email': email,
         'phone': phone,
         'website': website
