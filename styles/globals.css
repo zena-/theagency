@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -36,6 +37,11 @@ nav .forT {
   font-size: 27px;
   /*font-weight: 600;*/
 }
+nav .forT {
+  justify-content: left;
+  background: url(/logo.png) no-repeat center center;
+  background-size: cover;
+}
 nav .call {
   width: 50%;
   border-right: 1px solid #000;
@@ -58,7 +64,7 @@ nav .call p {
 }
 nav .talk, nav .talk a {
   width: 20%;
-  background: #004f40;
+  background: cadetblue;
   text-align: center;
   height: 100%;
   color: #fff;
@@ -87,7 +93,10 @@ nav .talk span, .cta span {
   align-items: center;
 }
 .cta span svg {margin-left: 5px;}
-nav .talk:hover {background: lime;}
+nav .talk:hover {
+  background: steelblue; 
+  color: #fff;
+}
 a:hover {color: #004F40;}
 .b-bottom {border-bottom: 1.5px solid #004f40;}
 .b-right {border-right: 1.5px solid #004f40;}
@@ -111,6 +120,15 @@ a:hover {color: #004F40;}
   flex-direction: column;
   padding: 20px 40px;
 }
+.ad .box {
+  width: 100%;
+  padding: 10px;
+  align-self: auto;
+}
+.ad .list {
+  height: 14rem;
+  overflow: hidden;
+}
 .box img {
   display: block;
   margin: 10px auto;
@@ -129,6 +147,25 @@ a:hover {color: #004F40;}
   font-size: 40px;
   /*text-align: center;*/
   padding-left: 60px;
+}
+
+.ecomm ul {
+  font-size: 25px;
+  font-weight: 300;
+  list-style: circle;
+}
+.ecomm li {margin-bottom: 10px;}
+
+.ad .copy {
+  font-size: 20px;
+  font-weight: 300;
+  width: 60%;
+  padding: 10px 30px;
+  list-style: circle;
+/*  margin: 30px 0 30px auto;*/
+}
+.ad .copy li {
+  padding-bottom: 20px;
 }
 
 .hero .imgWrap {
@@ -161,9 +198,10 @@ a:hover {color: #004F40;}
   margin: auto;
   padding: 0 60px;
   border-right: 1.5px dashed #004f40;
-  background: #000;
+  background: rgb(52, 52, 52);
 }
-.hero-copy h3 {
+.ad .hero-copy {margin: 0}
+.hero-copy h1 {
   /*font-family: 'Rubik';*/
   font-style: normal;
   font-weight: 500;
@@ -182,7 +220,10 @@ a:hover {color: #004F40;}
   margin-bottom: 38px;
   color: #fff;
 }
-/*.copy-p strong {color: #004f40;}*/
+.ad .copy-p {
+  font-weight: 300;
+}
+/*.copy-p strong {color: cadetblue;}*/
 .cta {
   border: 1px solid #000000;
   width: 293px;
@@ -190,8 +231,11 @@ a:hover {color: #004F40;}
   box-shadow: -10px 9px 0px #fff;
   color: #fff;
 }
-.cta.o {background: #004f40;}
-.cta.o:hover {background: lime;}
+.cta.o {background: cadetblue;}
+.cta.o:hover {
+  background: steelblue;
+  color: #fff;
+}
 .cta.w {background: #fff;}
 
 footer {
@@ -210,6 +254,66 @@ footer p {
   font-size: 14px;
 }
 
+.ad .form {
+  padding: 30px;
+  background: rgb(52, 52, 52);
+}
+.ad .form h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+
+}
+.ad form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.ad form input,
+.ad form button {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  padding-left: 7px;
+  color: #fff;
+  background: #000000a3;
+  cursor: pointer;
+}
+.ad form input:focus-visible {
+  outline: none;
+}
+.ad form button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  width: 30%;
+  align-self: end;
+}
+.ad form button:hover {
+  background: #fff;
+  color: #000000a3;
+}
+
+.ad .heroImg {
+  background: url(/deskview.webp) no-repeat -5rem center;
+  width: 50%;
+  background-size: cover;
+  filter: grayscale(1);
+}
+
+.ad .ad_services .b-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ad .serviceImg {
+  width: 40%;
+  background: url(/ui-white.webp) no-repeat center center;
+  background-size: cover;
+  border-right: 4px solid black;
+}
 
 @media (max-width: 1000px) {
   nav .forT {
@@ -231,7 +335,7 @@ footer p {
     font-size: 50px;
   }
   .cta.o:hover{
-    background: #004f40;
+    background: cadetblue;
   }
   .hero {
     flex-direction: column;
@@ -272,6 +376,51 @@ footer p {
     border-bottom: 1.5px solid #004f40;
   }
   .b-right {border-right: none;}
+
+  .ad .copy {
+    width: auto;
+    margin: 20px;
+  }
+  .ad .box {
+    width: 33%;
+    padding: 0 5px;
+    align-self: auto;
+    height: 14rem;
+  }
+  .ad .list {
+    width: 52rem;
+    overflow-y: hidden;
+    flex-direction: row;
+  }
+  .ad .landing .b-bottom {overflow-x: auto;}
+
+  .ad .hero-copy {
+    background: url(/deskview.webp) no-repeat -21rem center;
+    background-size: cover;
+    padding: 40px 15px;
+  }
+  .ad .hero-copy-in {
+    background: rgba(52,52,52,0.9);
+    padding: 1px 12px 27px;
+  }
+  .ad .heroImg {display: none;}
+  .ad .hero-copy h1 {
+    font-size: 37px;
+    line-height: 40px;
+  }
+  .ad .ad_services .b-bottom { flex-direction: column;}
+  .ad .serviceImg {
+    width: 100%;
+    border-right: none;
+    height: 20rem;
+  }
+  .ad .form h2 br {display: none;}
+  .ad form {width: 80%;}
+  .ad form button {width: 100%;}
+  .ad form button:hover {
+    color: #fff;
+    background: #000000a3;
+  }
 }
 
 

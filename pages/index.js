@@ -6,36 +6,27 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Zen - The Agency</title>
-        <meta name="description" content="I'll build the website with your peace in mind" />
+        <meta name="description" content="Get a Website That Stands Out! From stunning designs to seamless functionality, we've got you covered." />
         <link rel="icon" href="" />
       </Head>
 
       <main className="">
         <nav>
           <div className="forT"><span className="a-center"></span></div>
-          <div className="call"><p>...zena</p></div>
-          <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="talk hideSmall" ><span className="a-center">let&#39;s connect  
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-at" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-          </svg>
-            </span>
+          <div className="call"></div>
+          <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="talk hideSmall" ><span className="a-center">let&#39;s connect</span>
           </a>
         </nav>
 
         <section className="hero b-bottom">
           <div className="hero-copy">
             <div className="hero-copy-in">
-              <h3>Businesses: spend your time thinking about your customers, we&#39;ll take care of your&nbsp;website</h3>
-              <p className="copy-p">You may not know where to start, what can or can not be done, or what&#39;s needed. <strong>We&#39;re here to&nbsp;help.</strong> 
-                <br/>Front end web developers that specialize in user interaction. 
-                <br/>We build landing pages, e-commerce sites, ads, and more. We&#39;ll also update and maintain your existing site if needed. Using HTML, CSS, Javascript, React, and Next.</p>
+              <h1>Welcome to Our Digital Playground: Crafting Engaging Web Experiences for You!</h1>
+              <p className="copy-p">Welcome to nosazena, your go-to web development agency for creating stunning and responsive websites. Our team of experienced developers and designers are passionate about creating tailor-made solutions that help our clients achieve their business goals.
+                <br/>At nosazena, we believe in delivering excellence, and that's why we use the latest technologies and industry standards to create websites that are not only visually stunning but also user-friendly and optimized for search engines.
+                <br/>Whether you're a small business owner or a large corporation, we're committed to providing you with the highest quality web development services at an affordable price. Contact us today to schedule a consultation and see how we can help you take your online presence to the next level.</p>
               <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="cta o">
-                <span>Let&#39;s talk about you 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-heart" viewBox="0 0 16 16">
-                    <path fillRule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                  </svg>
-                </span>
+                <span>Let&#39;s talk about you</span>
               </a>
             </div>
           </div>
@@ -44,7 +35,13 @@ export default function Home() {
 
         <section className="b-bottom ecomm">
           <div className="b-bottom">
-            <p className="title">E-Commerce Sites:</p>
+            <p className="title">Our services include:</p>
+            <ul className="">
+              <li>Front-end development: From responsive design to user experience optimization, we create websites that look great and function seamlessly on all devices.</li>
+              <li>E-commerce development: We can help you set up your online store, from payment gateways to product management, to ensure a seamless shopping experience for your customers.</li>
+              <li>Content management system (CMS) development: We build custom CMS solutions to make it easy for you to manage and update your website content without any technical knowledge.</li>
+              <li>Website maintenance and support: We offer ongoing maintenance and support to ensure your website stays up to date and runs smoothly.</li>
+            </ul>
           </div>
           <div className="flex boxes">
             <div className="box b-right a-center">
@@ -85,7 +82,7 @@ export default function Home() {
 
       <footer>
         <p>Psalm 91</p>
-        <p className="copyRight">Copyright 2023 Nosazena LLC</p>
+        <p className="copyRight">© 2023 Nosazena LLC</p>
         <p>Psalm 91</p>
       </footer>
     </div>
