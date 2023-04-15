@@ -23,8 +23,8 @@ export default function Home() {
             <div className="hero-copy-in">
               <h1>Welcome to Our Digital Playground: Crafting Engaging Web Experiences for You!</h1>
               <p className="copy-p">Welcome to nosazena, your go-to web development agency for creating stunning and responsive websites. Our team of experienced developers and designers are passionate about creating tailor-made solutions that help our clients achieve their business goals.
-                <br/>At nosazena, we believe in delivering excellence, and that's why we use the latest technologies and industry standards to create websites that are not only visually stunning but also user-friendly and optimized for search engines.
-                <br/>Whether you're a small business owner or a large corporation, we're committed to providing you with the highest quality web development services at an affordable price. Contact us today to schedule a consultation and see how we can help you take your online presence to the next level.</p>
+                <br/>At nosazena, we believe in delivering excellence, and that&#39;s why we use the latest technologies and industry standards to create websites that are not only visually stunning but also user-friendly and optimized for search engines.
+                <br/>Whether you&#39;re a small business owner or a large corporation, we&#39;re committed to providing you with the highest quality web development services at an affordable price. Contact us today to schedule a consultation and see how we can help you take your online presence to the next level.</p>
               <a href="mailto:e.nosazena@gmail.com?subject=Let's talk" className="cta o">
                 <span>Let&#39;s talk about you</span>
               </a>

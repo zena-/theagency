@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import Link from 'next/link'
 import Head from 'next/head'
 import axios from 'axios'
 import qs from 'qs';
@@ -46,7 +47,7 @@ export default function Ad() {
 
       <main className="ad">
         <nav>
-          <a href="/" className="forT"></a>
+          <Link href="/"><div className="forT"></div></Link>
           <div className="call"><span className="a-center"></span></div>
           <a href="#form" className="talk hideSmall" ><span className="a-center">let&#39;s talk</span>
           </a>
@@ -56,7 +57,7 @@ export default function Ad() {
           <div className="hero-copy">
             <div className="hero-copy-in">
               <h1>Transform your website&nbsp;today!</h1>
-              <p className="copy-p">At nosazena, we offer professional web development services that will help take your business to the next level. Our team of expert front end developers specializes in creating stunning and functional websites that are tailored to your unique needs. <br/><br/>Whether you need a new website built from scratch or an existing site redesigned, we have the skills and experience to deliver results that exceed your expectations. And with our free consultations, you can get started with no risk and no obligation. <br/><br/>Don't settle for a mediocre website. Contact nosazena today to learn more about how we can help your business thrive.</p>
+              <p className="copy-p">At nosazena, we offer professional web development services that will help take your business to the next level. Our team of expert front end developers specializes in creating stunning and functional websites that are tailored to your unique needs. <br/><br/>Whether you need a new website built from scratch or an existing site redesigned, we have the skills and experience to deliver results that exceed your expectations. And with our free consultations, you can get started with no risk and no obligation. <br/><br/>Don&#39;t settle for a mediocre website. Contact nosazena today to learn more about how we can help your business thrive.</p>
               <a href="#form" className="cta o">
                 <span>Let&#39;s talk</span>
               </a>
