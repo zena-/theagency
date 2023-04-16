@@ -94,7 +94,7 @@ nav .talk span, .cta span {
 }
 .cta span svg {margin-left: 5px;}
 nav .talk:hover {
-  background: steelblue; 
+  background: #004f40; 
   color: #fff;
 }
 a:hover {color: #004F40;}
@@ -233,7 +233,7 @@ a:hover {color: #004F40;}
 }
 .cta.o {background: cadetblue;}
 .cta.o:hover {
-  background: steelblue;
+  background: #004f40;
   color: #fff;
 }
 .cta.w {background: #fff;}
@@ -398,6 +398,7 @@ footer p {
     background: url(/deskview.webp) no-repeat -21rem center;
     background-size: cover;
     padding: 40px 15px;
+    border-right: none;
   }
   .ad .hero-copy-in {
     background: rgba(52,52,52,0.9);

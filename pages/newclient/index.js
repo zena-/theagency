@@ -16,11 +16,11 @@ export default function Ad() {
     if (/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/.test(email) && /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phone)) {
       const data = {
         'form-name': 'clientForm',
-        'company': company,
-        'name': name,
-        'email': email,
-        'phone': phone,
-        'website': website
+        'Company': `${company}`,
+        'Name': `${name}`,
+        'Email': `${email}`,
+        'Phone': `${phone}`,
+        'website': `${website}`,
       }
       axios
         .post("/", qs.stringify(data))
@@ -105,13 +105,13 @@ export default function Ad() {
 
         <section className="b-bottom form" id="form">
           <div className="">
-            <h2>skyrocket your business with our <br/>expert web development services</h2>
+            <h2>skyrocket your business with our <br/>expert web development&nbsp;services</h2>
             <form name="clientForm" className="forFo formPat" onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bot-field" encType="application/x-www-form-urlencoded" >
               <input type="text" required name="Company" placeholder="Company" value={company} onChange={(e) => setcompany(e.target.value)} />
               <input type="text" required name="Name" placeholder="Name" value={name} onChange={(e) => setname(e.target.value)} />
-              <input type="email" required name="Email" pattern = "^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$" placeholder="Job Email" value={email} onChange={(e) => setemail(e.target.value)} />
+              <input type="email" required name="Email" pattern = "^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$" placeholder="Email" value={email} onChange={(e) => setemail(e.target.value)} />
               <input type="text" required name="Phone" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" placeholder="Phone" value={phone} onChange={(e) => setphone(e.target.value)} />
-              <input type="text" required name="website" placeholder="website" value={website} onChange={(e) => setwebsite(e.target.value)} />
+              <input type="text" required name="website" placeholder="Website" value={website} onChange={(e) => setwebsite(e.target.value)} />
               <button type="submit">Let&#39;s talk</button>
             </form>
           </div>
