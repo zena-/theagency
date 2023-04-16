@@ -67,7 +67,7 @@ export default function Ad() {
         </section>
 
         <section className="b-bottom landing">
-          <div className="">
+          <div className="scroll">
             <div className="flex list">
               <div className="box b-right a-center">
                 <a href="https://apple.com/au" target="_blank" rel="noreferrer"><img src="/apple.webp" width="100%" alt="nosazena" /></a>

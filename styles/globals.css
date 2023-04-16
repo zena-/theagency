@@ -162,7 +162,7 @@ a:hover {color: #004F40;}
   width: 60%;
   padding: 10px 30px;
   list-style: circle;
-/*  margin: 30px 0 30px auto;*/
+  margin: 150px 0;
 }
 .ad .copy li {
   padding-bottom: 20px;
@@ -379,20 +379,22 @@ footer p {
 
   .ad .copy {
     width: auto;
-    margin: 20px;
+    margin: 100px 20px;
   }
   .ad .box {
     width: 33%;
     padding: 0 5px;
     align-self: auto;
-    height: 14rem;
+    height: auto;
   }
   .ad .list {
-    width: 52rem;
+    width: 111rem;
     overflow-y: hidden;
     flex-direction: row;
+    height: 24rem;
+    gap: 12px;
   }
-  .ad .landing .b-bottom {overflow-x: auto;}
+  .ad .landing .scroll {overflow-x: scroll;}
 
   .ad .hero-copy {
     background: url(/deskview.webp) no-repeat -21rem center;
