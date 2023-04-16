@@ -418,12 +418,13 @@ footer p {
     height: 20rem;
   }
   .ad .form h2 br {display: none;}
-  .ad form {width: 80%;}
+  .ad form {width: 90%;}
   .ad form button {width: 100%;}
   .ad form button:hover {
     color: #fff;
     background: #000000a3;
   }
+  .ad .box img {box-shadow: -1px 0px 4px 2px grey;}
 }
 
 
