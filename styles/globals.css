@@ -156,16 +156,22 @@ a:hover {color: #004F40;}
 }
 .ecomm li {margin-bottom: 10px;}
 
-.ad .copy {
-  font-size: 20px;
-  font-weight: 300;
+.ad .copywrap {
   width: 60%;
   padding: 10px 30px;
-  list-style: circle;
   margin: 150px 0;
+}
+.ad .copy {
+  font-size: 20px;
+  font-weight: 300;  
+  list-style: circle;
 }
 .ad .copy li {
   padding-bottom: 20px;
+}
+.ad .copywrap .title {
+  padding-left: 40px;
+  margin-top: 0;
 }
 
 .hero .imgWrap {
@@ -377,9 +383,14 @@ footer p {
   }
   .b-right {border-right: none;}
 
-  .ad .copy {
+  .ad .copywrap {
     width: auto;
-    margin: 100px 20px;
+    margin: 80px 20px;
+    padding: 0;
+  }
+  .ad .copywrap .title {
+    padding-left: 0;
+    text-align: center;
   }
   .ad .box {
     width: 33%;
@@ -416,6 +427,9 @@ footer p {
     width: 100%;
     border-right: none;
     height: 20rem;
+  }
+  .ad .form {
+    padding: 75px 30px;
   }
   .ad .form h2 br {display: none;}
   .ad form {width: 90%;}

@@ -93,12 +93,15 @@ export default function Ad() {
 
         <section className="b-bottom ad_services">
           <div className="b-bottom">
-            <ul className="copy">
-              <li>Our web development services provide businesses with custom-built websites that are both aesthetically pleasing and functional. </li>
-              <li>We specialize in building unique designs that stand out in the crowded online marketplace, and our expert team ensures that every website we build is optimized for user experience and search engines. </li>
-              <li>We use the latest technologies and frameworks to create fast and responsive websites that work seamlessly across all devices. </li>
-              <li>What sets us apart from our competitors is our dedication to providing exceptional customer service and our commitment to delivering high-quality work on time and within budget.</li>
-            </ul>
+            <div className="copywrap">
+              <h1 className="title">Services</h1>
+              <ul className="copy">
+                <li>Our web development services provide businesses with custom-built websites that are both aesthetically pleasing and functional. </li>
+                <li>We specialize in building unique designs that stand out in the crowded online marketplace, and our expert team ensures that every website we build is optimized for user experience and search engines. </li>
+                <li>We use the latest technologies and frameworks to create fast and responsive websites that work seamlessly across all devices. </li>
+                <li>What sets us apart from our competitors is our dedication to providing exceptional customer service and our commitment to delivering high-quality work on time and within budget.</li>
+              </ul>
+            </div>
             <div className="serviceImg"></div>
           </div>
         </section>
