@@ -20,7 +20,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        {/* Static copy of the form so Netlify can detect it at deploy time */}
       </body>
     </Html>
   )

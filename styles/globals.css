@@ -708,15 +708,11 @@ p {
   font-size: 16px;
 }
 
-/* ---------- CTA band + form panel ---------- */
-.cta-band,
-.form-panel {
+/* ---------- CTA band ---------- */
+.cta-band {
   background: var(--orange);
   color: var(--brown);
   border-radius: 28px;
-}
-
-.cta-band {
   padding: 72px 48px;
   text-align: center;
 }
@@ -730,80 +726,6 @@ p {
 .cta-band p {
   margin-bottom: 32px;
   color: var(--brown-soft);
-}
-
-.form-panel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  padding: 64px 56px;
-}
-
-.form-panel h2 {
-  margin-bottom: 18px;
-  font-size: clamp(30px, 3.6vw, 44px);
-}
-
-.form-panel p {
-  color: var(--brown-soft);
-}
-
-.form-panel form {
-  display: grid;
-  gap: 14px;
-}
-
-.form-panel label {
-  display: grid;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--brown-soft);
-}
-
-.form-panel input {
-  width: 100%;
-  padding: 13px 16px;
-  border: 1.5px solid rgba(42, 20, 7, 0.35);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.4);
-  color: var(--brown);
-  font: 400 16px var(--font-body);
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.form-panel input::placeholder {
-  color: rgba(42, 20, 7, 0.6);
-}
-
-.form-panel input:focus {
-  outline: none;
-  border-color: var(--brown);
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.form-panel .btn {
-  justify-self: start;
-  margin-top: 6px;
-}
-
-.form-msg {
-  min-height: 1.5em;
-  font-size: 15px;
-}
-
-.form-msg.sent {
-  color: var(--brown) !important;
-  font-weight: 600;
-}
-
-.form-msg.invalid,
-.form-msg.error {
-  color: var(--brown) !important;
-  font-weight: 600;
 }
 
 /* ---------- Footer ---------- */
@@ -888,11 +810,6 @@ p {
     grid-template-columns: 1fr;
     gap: 48px;
     padding: 56px 0 40px;
-  }
-  .form-panel {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    padding: 44px 28px;
   }
 }
 

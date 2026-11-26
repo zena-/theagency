@@ -15,9 +15,9 @@ export default function Header({ home = true }) {
           <a href={`${prefix}#work`}>Work</a>
           <a href={`${prefix}#stack`}>Stack</a>
           <a href={`${prefix}#services`}>Services</a>
-          <a href={home ? '#contact' : '#form'}>Contact</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <a href={home ? MAILTO : '#form'} className="btn btn-small">
+        <a href={MAILTO} className="btn btn-small">
           Let&#39;s talk
         </a>
       </div>
