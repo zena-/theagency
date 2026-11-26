@@ -1,5 +1,6 @@
 :root {
-  --bg: #faf8f4;
+  --bg: #ffffff; /* previous: #faf8f4 */
+  --cream: #faf8f4;
   --surface: #ffffff;
   --ink: #16201d;
   --muted: #5d6965;
@@ -13,7 +14,7 @@
   --brown-soft: #3d200c;
   --accent: #c2530c;
   --radius: 18px;
-  --font-display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif; /* previous: 'Fraunces', Georgia, serif */
+  --font-display: 'Manrope', 'Helvetica Neue', Arial, sans-serif; /* previous: 'Space Grotesk', 'Bricolage Grotesque' */
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
@@ -53,7 +54,7 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   margin: 0;
 }
@@ -82,7 +83,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(250, 248, 244, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -132,18 +133,24 @@ p {
   justify-content: center;
   gap: 8px;
   padding: 14px 26px;
-  border: 1.5px solid var(--orange);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 999px;
-  background: var(--orange);
+  /* liquid glass: translucent tint, top sheen, blur, bright rim */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 60%),
+    rgba(243, 112, 33, 0.78);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(154, 66, 10, 0.25),
+    0 10px 24px -10px rgba(243, 112, 33, 0.6);
   color: var(--brown);
   font: 600 15px/1 var(--font-body);
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .btn:hover {
-  background: var(--orange-hover);
-  border-color: var(--orange-hover);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.05) 60%),
+    rgba(255, 132, 64, 0.85);
   transform: translateY(-1px);
 }
 
@@ -153,23 +160,28 @@ p {
 }
 
 .btn-ghost {
-  background: transparent;
+  border-color: rgba(243, 112, 33, 0.4);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.35) 100%);
+  box-shadow: inset 0 1.5px 0 #fff, inset 0 -1px 2px rgba(243, 112, 33, 0.12),
+    0 8px 20px -12px rgba(243, 112, 33, 0.4);
   color: var(--orange-ink);
 }
 
 .btn-ghost:hover {
-  background: var(--orange);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(243, 112, 33, 0.22) 100%);
   color: var(--brown);
 }
 
 .btn-light {
-  background: #fff;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.45) 100%);
+  box-shadow: inset 0 1.5px 0 #fff, inset 0 -1px 2px rgba(154, 66, 10, 0.12),
+    0 10px 24px -12px rgba(42, 20, 7, 0.45);
   color: var(--brown);
 }
 
 .btn-light:hover {
-  background: var(--bg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.65) 100%);
   color: var(--brown);
 }
 
@@ -231,8 +243,7 @@ p {
   position: absolute;
   width: 82%;
   background: #fff;
-  border: 1.5px solid var(--orange);
-  border-radius: 14px;
+  border-radius: 0;
   box-shadow: 0 24px 50px -24px rgba(243, 112, 33, 0.45);
   overflow: hidden;
 }
@@ -335,7 +346,7 @@ p {
   aspect-ratio: 4 / 5;
   border-radius: 22px;
   border: 2px solid var(--orange);
-  box-shadow: 8px 8px 0 var(--orange);
+  box-shadow: 8px 8px 0 var(--cream);
   overflow: hidden;
 }
 
@@ -367,7 +378,7 @@ p {
   border: 1.5px solid var(--orange);
   border-radius: var(--radius);
   background: #eceae4;
-  box-shadow: 14px 14px 0 var(--tint);
+  box-shadow: 14px 14px 0 var(--cream);
   overflow: hidden;
 }
 
@@ -382,8 +393,8 @@ p {
 
 .case-body .chips li {
   padding: 5px 12px;
-  background: var(--tint);
-  border-color: transparent;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(253, 233, 218, 0.7) 100%);
+  border-color: rgba(243, 112, 33, 0.25);
   color: var(--orange-ink);
   font-size: 13px;
   font-weight: 600;
@@ -527,8 +538,13 @@ p {
 
 .chips li {
   padding: 8px 16px;
-  border: 1.5px solid var(--orange);
+  border: 1px solid rgba(243, 112, 33, 0.4);
   border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 100%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+  box-shadow: inset 0 1.5px 0 #fff, inset 0 -1px 2px rgba(243, 112, 33, 0.1),
+    0 6px 14px -8px rgba(243, 112, 33, 0.4);
   color: var(--brown);
   font-size: 15px;
   font-weight: 500;
@@ -622,6 +638,7 @@ p {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: 8px 8px 0 var(--cream);
 }
 
 .service {
