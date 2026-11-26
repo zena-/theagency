@@ -96,6 +96,50 @@ export default function NewClient() {
 
         <StackSection intro="Proficient in JavaScript, CSS, Tailwind, React.js and Next.js, with hands on experience across many CMSs, including WordPress, Shopify, Contentful and Sanity." />
 
+        <section id="form" className="section wrap">
+          <div className="form-panel">
+            <div>
+              <h2>Skyrocket your business with expert web development.</h2>
+              <p>Leave your details and I&#39;ll get back to you to arrange your free consultation.</p>
+            </div>
+            <form
+              name="clientForm"
+              onSubmit={handleSubmit}
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              noValidate
+            >
+              <label>
+                Company
+                <input type="text" required autoComplete="organization" value={fields.Company} onChange={set('Company')} />
+              </label>
+              <label>
+                Name
+                <input type="text" required autoComplete="name" value={fields.Name} onChange={set('Name')} />
+              </label>
+              <label>
+                Email
+                <input type="email" required autoComplete="email" value={fields.Email} onChange={set('Email')} />
+              </label>
+              <label>
+                Phone
+                <input type="tel" required autoComplete="tel" placeholder="555-123-4567" value={fields.Phone} onChange={set('Phone')} />
+              </label>
+              <label>
+                Website
+                <input type="text" required placeholder="yoursite.com" value={fields.website} onChange={set('website')} />
+              </label>
+              <button type="submit" className="btn btn-light" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending…' : "Let's talk"}
+              </button>
+              <p className={`form-msg ${status}`} role="status" aria-live="polite">
+                {status === 'sent' && "Thanks! I'll be in touch shortly."}
+                {status === 'invalid' && 'Please check your email address and a 10 digit phone number.'}
+                {status === 'error' && 'Something went wrong. Please try again or email me directly.'}
+              </p>
+            </form>
+          </div>
+        </section>
       </main>
 
       <Footer />
